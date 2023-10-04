@@ -1,4 +1,288 @@
-body {
+:root {
+	--creamwhite: #F9F7F3;
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	background-color: var(--creamwhite);
+	font-size: 16px;
+	background-color: #f0f0f0;
+}
+main {
 	font-family: sans-serif;
-	padding: 1em 3em;
+}
+
+button {
+	display: flex;
+	align-self: center;
+	padding: 10px 20px;
+    font-size: 16px;
+    color: #000000; /* Text color */
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out; /* Smooth hover effect */
+}
+button:hover {
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+#startBreakfastPage {
+	height: 50vh;
+}
+#startBreakfast {
+	height: 20%;
+	display: flex;
+	align-items: center;
+	padding: 4rem;
+	font-size: 1.2rem;
+	background-color: #d08391;
+	text-transform: uppercase;
+}
+#startBreakfast:hover {
+	font-weight: 600;
+}
+.selectTopping {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.selectTopping option {
+	padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+.selectTopping option:hover {
+    background-color: #007BFF; /* Blue background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.content_wrap {
+	margin: 0 auto;
+	width: 80%;
+}
+.h1Title {
+	padding: 1rem 0;
+}
+
+/* underlines */
+.black_borderbottom1px {
+	border-bottom: 1px solid black;
+}
+/*padding */
+.padding1remTB {
+	padding: 1rem;
+}
+/* Width and height */
+.width100P {
+	width: 100%;
+}
+/* flex and grids and gaps */
+.flex {
+	display: flex;
+}
+.flexcenter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+.gridfit200 {
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+	gap: 3rem 1rem;
+}
+.gap0_4rem {
+	gap: 0.4rem;
+}
+
+
+.ulList {
+	border: 1px solid black;
+	border-radius: 5px;
+	min-height: 8rem;	
+}
+
+
+/* Slice of bread design */
+.plate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24rem;
+	height: 24rem;
+	padding: 3rem;
+	margin: 2rem auto;
+	background-color: blanchedalmond;
+	border-radius: 100%;
+	border: 2rem solid bisque;
+	filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.25));
+}
+.layer {
+	position: absolute;
+    width: 88%;
+	height: 88%;
+    border-radius: 20px;
+	filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
+	box-shadow: none;
+}
+.sliceOfBreadCSS {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+    height: 90%;
+    position: relative;
+	background-color: #DAA520;
+	margin: auto auto;
+	border-radius: 2rem 2rem 0.5rem 0.5rem;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25) inset;
+}
+.butter {
+	background: rgba(255, 255, 72, 0.708);
+	width: 94%;
+	height: 92%;
+}
+.cheese {
+    background-color: #FFD700; /* Yellow for cheese */
+}
+
+/* Holes in the cheese */
+.hole {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.hole_1 {
+    top: 15%;
+    left: 20%;
+}
+
+.hole_2 {
+    top: 40%;
+    left: 70%;
+	width: 2rem;
+    height: 2rem;
+}
+
+.hole_3 {
+    top: 70%;
+    left: 40%;
+}
+.ham {
+	background-color: #d08391;
+}
+.salami {
+	background-color: transparent;
+}
+.circle {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    background-color: #a64126;
+    border-radius: 50%;
+	
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25) inset;
+	
+}
+
+.salami_1 {
+    top: -5%;
+    left: -5%;
+}
+
+.salami_2 {
+    top: 10%;
+    left: 25%;
+}
+
+.salami_3 {
+    top: 25%;
+    left: 0%;
+}
+
+.circleDot {
+	position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #b04d32;
+    border-radius: 50%;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.salamiDot_1 {
+    top: 20%;
+    left: 20%;
+}
+
+.salamiDot_2 {
+    top: 40%;
+    left: 35%;
+}
+
+.salamiDot_3 {
+    top: 65%;
+    left: 70%;
+}
+.salamiDot_4 {
+    top: 75%;
+    left: 40%;
+}
+.salamiDot_5 {
+    top: 30%;
+    left: 70%;
+}
+.salamiDot_6 {
+    top: 55%;
+    left: 20%;
+}
+.salamiDot_7 {
+    top: 10%;
+    left: 50%;
+}
+
+/* eat design */
+#eatDesign {
+	background-color: blanchedalmond;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+	left: 0%;
+}
+
+/* Logo */
+.logoImg {
+	height: 4rem;
+	width: 4rem;
+}
+
+
+@media (max-width:1300px) {
+    .plate {
+		width: 16rem;
+		height: 16rem;
+		padding: 2rem;
+		border: 1.2rem solid bisque;
+	}
+	.circle {
+		position: absolute;
+		width: 6.1rem;
+		height: 6.1rem;
+		background-color: #a64126;
+		border-radius: 50%;
+		
+		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25) inset;
+		
+	}
 }
