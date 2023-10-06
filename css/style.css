@@ -22,11 +22,25 @@ button {
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
-    margin: 5px;
+    margin: 0;
     transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out; /* Smooth hover effect */
 }
 button:hover {
     transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+.eatButton, .trashFoodButton {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	height: 4rem;
+}
+.eatButton {
+	background-color: #f5c4c4;
+}
+.trashFoodButton {
+	background-color: #ceb5b5;
 }
 #startBreakfastPage {
 	height: 50vh;
@@ -77,7 +91,16 @@ button:hover {
 }
 /*padding */
 .padding1remTB {
-	padding: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.padding2remTB {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+/* border line */
+.borderlinedashed {
+    border: 1px dashed black;
 }
 /* Width and height */
 .width100P {
@@ -94,10 +117,10 @@ button:hover {
 	justify-content: center;
 	margin: 0 auto;
 }
-.gridfit200 {
+.gridfit100 {
 	display: grid;
-	grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-	gap: 3rem 1rem;
+	grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1rem 1rem;
 }
 .gap0_4rem {
 	gap: 0.4rem;
@@ -110,6 +133,10 @@ button:hover {
 	min-height: 8rem;	
 }
 
+/* Message area */
+.message {
+	border-bottom: 1px dashed #000000;
+}
 
 /* Slice of bread design */
 .plate {
@@ -129,7 +156,7 @@ button:hover {
 	position: absolute;
     width: 88%;
 	height: 88%;
-    border-radius: 20px;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
 	filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
 	box-shadow: none;
 }
