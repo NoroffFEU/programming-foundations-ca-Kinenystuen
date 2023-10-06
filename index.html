@@ -7,11 +7,82 @@
     <title>Programming Foundations CA</title>
     <link href='css/style.css' rel='stylesheet' />
     <link rel='icon' href='data:;base64,=' />
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
-
-    <script src="js/script.js"></script>
+    <header class="black_borderbottom1px">
+        <div class="content_wrap flex">
+            <a href="/index.html"><img class="logoImg" src="/images/logo_salamibread.png" alt="Logo breakfast"></a>
+            <h1 class="h1Title flexcenter">Programming Foundations CA</h1>
+        </div>
+    </header>
+    <main class="padding1remTB">
+        <div id="startBreakfastPage" class="content_wrap flexcenter">
+            <button id="startBreakfast">Start your breakfast</button>
+        </div>
+        <div class="content_wrap" id="breakfastTable">
+            <h2 class="padding1remTB">Breakfast:</h2>
+            <div class="gridfit200">
+                <div class="plate">
+                    <div class="sliceOfBreadCSS" id="sliceOfBreadDesign">
+                        <div class="layer butter" id="butterDesign"></div>
+                        <div class="layer ham" id="hamDesign"></div>
+                        <div class="layer salami" id="salamiDesign">
+                            <div class="circle salami_1">
+                                <div class="circleDot salamiDot_1"></div>
+                                <div class="circleDot salamiDot_2"></div>
+                                <div class="circleDot salamiDot_3"></div>
+                                <div class="circleDot salamiDot_4"></div>
+                                <div class="circleDot salamiDot_5"></div>
+                                <div class="circleDot salamiDot_6"></div>
+                                <div class="circleDot salamiDot_7"></div>
+                            </div>
+                            <div class="circle salami_2">
+                                <div class="circleDot salamiDot_1"></div>
+                                <div class="circleDot salamiDot_2"></div>
+                                <div class="circleDot salamiDot_3"></div>
+                                <div class="circleDot salamiDot_4"></div>
+                                <div class="circleDot salamiDot_5"></div>
+                                <div class="circleDot salamiDot_6"></div>
+                                <div class="circleDot salamiDot_7"></div>
+                            </div>
+                            <div class="circle salami_3">
+                                <div class="circleDot salamiDot_1"></div>
+                                <div class="circleDot salamiDot_2"></div>
+                                <div class="circleDot salamiDot_3"></div>
+                                <div class="circleDot salamiDot_4"></div>
+                                <div class="circleDot salamiDot_5"></div>
+                                <div class="circleDot salamiDot_6"></div>
+                                <div class="circleDot salamiDot_7"></div>
+                            </div>
+                        </div>
+                        <div class="layer cheese" id="cheese">
+                            <div class="hole hole_1"></div>
+                            <div class="hole hole_2"></div>
+                            <div class="hole hole_3"></div>
+                        </div>
+                        <div id="eatDesign"></div>
+                    </div>
+                </div>
+                <div class="gridfit200">
+                    <button class="addBreadButton">Add bread</button>
+                    <button class="addButterButton">Add butter</button>
+                    <div class="flexcenter gap0_4rem width100P">
+                        <select class="selectTopping width100P">
+                            <option value="" disabled selected hidden>Select topping:</option>
+                        </select>
+                        <button class="addToppingButton width100P">Add topping</button>
+                    </div>
+                    <button class="eatButton">Eat</button>
+                </div>
+            </div>
+            <p class="message flexcenter padding1remTB">Message area</p>
+            <button class="trashFoodButton flexcenter">Trash food</button>
+            <ul class="ulList">On plate:</ul>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
